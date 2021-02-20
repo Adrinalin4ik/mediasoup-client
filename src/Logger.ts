@@ -9,7 +9,11 @@ export class Logger
 	private readonly _error: debug.Debugger;
 
 	constructor(prefix?: string)
-	{
+	{	
+		console.log('FUCKINGTEST')
+		debug.enable('*');
+
+		debug.enabled('*')
 		if (prefix)
 		{
 			this._debug = debug(`${APP_NAME}:${prefix}`);
